@@ -50,11 +50,11 @@ public:
 		ypos = _tuioPoint->getY();
 	};
 	
-	float getX(){
+	float getX() const {
 		return xpos;
 	};
 	
-	float getY(){
+	float getY() const {
 		return ypos;
 	};
 	
