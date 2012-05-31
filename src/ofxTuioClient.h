@@ -153,7 +153,8 @@ public:
 
 							fid = (*closestCursor)->getFingerId();
 							freeCursorList.erase(closestCursor);
-							delete *closestCursor;
+							// it's an iterator, dude
+              // delete *closestCursor;
 						} else maxFingerID = fid;
 
 						ofxTuioCursor *addCursor = new ofxTuioCursor(sid,fid,xpos,ypos);
